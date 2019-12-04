@@ -1,4 +1,3 @@
-# destini-android-slier81
-StoryLine App
+# StoryLine App
 
 ![LifeLine](https://i.imgur.com/ynUFjtEl.png)
