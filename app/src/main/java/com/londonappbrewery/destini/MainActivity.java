@@ -26,21 +26,12 @@ public class MainActivity extends AppCompatActivity {
             int answerOne = 0;
             int answerTwo = 0;
 
-            if (storyIndex == 1) {
+            if (storyIndex == 1 || storyIndex == 2) {
                 story = R.string.T3_Story;
                 answerOne = R.string.T3_Ans1;
                 answerTwo = R.string.T3_Ans2;
                 storyIndex = 3;
-            }
-
-            if (storyIndex == 2) {
-                story = R.string.T3_Story;
-                answerOne = R.string.T3_Ans1;
-                answerTwo = R.string.T3_Ans2;
-                storyIndex = 3;
-            }
-
-            if (storyIndex == 3) {
+            } else if (storyIndex == 3) {
                 story = R.string.T6_End;
             }
 
@@ -51,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 topButton.setVisibility(View.GONE);
             }
+
             if (answerTwo != 0) {
                 bottomButton.setText(answerTwo);
             } else {
@@ -68,13 +60,9 @@ public class MainActivity extends AppCompatActivity {
                 answerOne = R.string.T2_Ans1;
                 answerTwo = R.string.T2_Ans2;
                 storyIndex = 2;
-            }
-
-            if (storyIndex == 2) {
+            } else if (storyIndex == 2) {
                 story = R.string.T4_End;
-            }
-
-            if (storyIndex == 3) {
+            } else if (storyIndex == 3) {
                 story = R.string.T5_End;
             }
 
@@ -85,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 topButton.setVisibility(View.GONE);
             }
+
             if (answerTwo != 0) {
                 bottomButton.setText(answerTwo);
             } else {
